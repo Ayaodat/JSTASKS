@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <p><input type="submit" id="submitBtn" value="Click Me" onclick= " myFunction()"></p>
+    <p class="myTxt"></p>
+</body>
+<script >
+    function myFunction() {
+  let num1 = parseFloat(prompt("Enter Number one : "));
+  let num2 = parseFloat(prompt("Enter Number two : "));
+  let text = document.querySelector(".myTxt");
+  if (!isNaN(num1) && !isNaN(num2)) {
+    if (num1 > num2) {
+      alert("Hello World");
+    } else {
+      alert("Goodbye");
+    }
+  } else {
+    alert("Invalid input.");
+  }
+}
+</script>
+
+</html>
